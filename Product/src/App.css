@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+  color: #222;
+}
+
+.App {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.heading p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  color: #666;
+  min-height: 50px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  color: #008000;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.addButton {
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+}
+
+.addButton:hover {
+  background: #0056b3;
+}
+
+.modifyButton {
+  background: #ffc107;
+  color: #222;
+  flex: 1;
+}
+
+.modifyButton:hover {
+  background: #e0a800;
+}
+
+.deleteButton {
+  background: #dc3545;
+  color: white;
+  flex: 1;
+}
+
+.deleteButton:hover {
+  background: #b02a37;
+}
+
+@media (max-width: 900px) {
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .heading h1 {
+    font-size: 28px;
+  }
+
+  .dropBox {
+  width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  background: white;
+}
+
+.dropBox p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.dropBox label {
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropBox input {
+  display: none;
+}
+.form {
+  margin: 20px auto;
+  padding: 20px;
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+}
+
+.form input {
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.saveButton {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.noImage {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+}
